@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 33, in script call
+    call random_event
+  File "game/script.rpy", line 9, in script
+    $ roll = random.randint(0,2)
+  File "game/script.rpy", line 9, in <module>
+    $ roll = random.randint(0,2)
+NameError: name 'random' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 33, in script call
+    call random_event
+  File "game/script.rpy", line 9, in script
+    $ roll = random.randint(0,2)
+  File "D:\programming\renpy-8.3.3-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\programming\renpy-8.3.3-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 9, in <module>
+    $ roll = random.randint(0,2)
+NameError: name 'random' is not defined
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.3.24111502
+I try RenPy 1.0
+Wed Nov 20 12:31:00 2024
